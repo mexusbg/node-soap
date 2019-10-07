@@ -1,11 +1,36 @@
 {
-  "name": "soap",
-  "version": "0.29.0",
-  "description": "A minimal node SOAP client",
-  "engines": {
-    "node": ">=4.0.0"
+  "_from": "soap",
+  "_id": "soap@0.29.0",
+  "_inBundle": false,
+  "_integrity": "sha512-eM+cnF6ZdJksMP94BdGoH4hxgMWxRLhJ7wVCY1nuSfeH7gsNZ6eGv8w+8BYZ8siQpJpM06gO08aU1KgdAm7qLQ==",
+  "_location": "/soap",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "soap",
+    "name": "soap",
+    "escapedName": "soap",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
-  "author": "Vinay Pulim <v@pulim.com>",
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/soap/-/soap-0.29.0.tgz",
+  "_shasum": "1d696223e263e9c5bb70cf0bc9d2626a7077b489",
+  "_spec": "soap",
+  "_where": "D:\\User Files\\mexus\\Desktop\\Work Projects\\soap-tests",
+  "author": {
+    "name": "Vinay Pulim",
+    "email": "v@pulim.com"
+  },
+  "bugs": {
+    "url": "https://github.com/vpulim/node-soap/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "@types/request": "^2.48.1",
     "bluebird": "^3.5.0",
@@ -20,32 +45,8 @@
     "uuid": "^3.1.0",
     "xml-crypto": "^1.4.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vpulim/node-soap.git"
-  },
-  "main": "./index.js",
-  "types": "./lib/soap.d.ts",
-  "directories": {
-    "lib": "./lib",
-    "test": "./test"
-  },
-  "scripts": {
-    "prepare": "npm run build",
-    "build": "tsc -p .",
-    "clean": "rm -rf lib",
-    "watch": "tsc -w -p .",
-    "lint": "tslint -p tsconfig.json",
-    "toc": "./node_modules/.bin/doctoc Readme.md --github --maxlevel 3",
-    "cover": "nyc --extension=.ts --reporter=lcov --reporter=html --reporter=text mocha --timeout 15000 --exit test/*-test.js test/security/*.js",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js -v",
-    "docs": "typedoc --out docs",
-    "test": "mocha --timeout 15000 --bail --exit test/*-test.js test/security/*.js"
-  },
-  "keywords": [
-    "soap"
-  ],
-  "license": "MIT",
+  "deprecated": false,
+  "description": "A minimal node SOAP client",
   "devDependencies": {
     "@types/bluebird": "^3.5.26",
     "@types/debug": "^4.1.2",
@@ -75,5 +76,37 @@
     "tslint": "^5.18.0",
     "typedoc": "^0.14.2",
     "typescript": "^3.3.3333"
-  }
+  },
+  "directories": {
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "homepage": "https://github.com/vpulim/node-soap#readme",
+  "keywords": [
+    "soap"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "name": "soap",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vpulim/node-soap.git"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "clean": "rm -rf lib",
+    "cover": "nyc --extension=.ts --reporter=lcov --reporter=html --reporter=text mocha --timeout 15000 --exit test/*-test.js test/security/*.js",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js -v",
+    "docs": "typedoc --out docs",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "mocha --timeout 15000 --bail --exit test/*-test.js test/security/*.js",
+    "toc": "doctoc Readme.md --github --maxlevel 3",
+    "watch": "tsc -w -p ."
+  },
+  "types": "./lib/soap.d.ts",
+  "version": "0.29.0"
 }
